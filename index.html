@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vívalo Agency - Más que un destino, una experiencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency - Más que un destino, una experiencia" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="planes-destinos.html">Planes y Destinos</a></li>
+                    <li><a href="por-que-vivalo.html">¿Por qué Vívalo?</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('imagenes/01.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/02.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/03.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/04.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/05.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/06.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/07.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/08.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/09.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/10.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/11.jpg')"></div>
+            <div class="slide" style="background-image: url('imagenes/12.jpg')"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Vívalo Agency</h1>
+            <p class="hero-subtitle">Más que un destino, una experiencia</p>
+            <a href="#planes" class="cta-button">Descubre Nuestros Planes</a>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Indicadores del carrusel -->
+        <div class="slider-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+            <span class="indicator" data-slide="4"></span>
+            <span class="indicator" data-slide="5"></span>
+            <span class="indicator" data-slide="6"></span>
+            <span class="indicator" data-slide="7"></span>
+            <span class="indicator" data-slide="8"></span>
+            <span class="indicator" data-slide="9"></span>
+            <span class="indicator" data-slide="10"></span>
+            <span class="indicator" data-slide="11"></span>
+        </div>
+        
+        <!-- Controles del carrusel -->
+        <button class="slider-control prev" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-control next" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency" class="footer-logo">
+                    <p>Más que un destino, una experiencia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="planes-destinos.html">Planes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>vivaloagency@gmail.com</p>
+                    <p>+57 310 377 6685</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vívalo Agency. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/573103776685?text=Hola, quiero información sobre sus planes de viaje" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

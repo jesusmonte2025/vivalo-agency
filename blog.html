@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vívalo Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency - Más que un destino, una experiencia" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="planes-destinos.html">Planes y Destinos</a></li>
+                    <li><a href="por-que-vivalo.html">¿Por qué Vívalo?</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Blog</h1>
+            <p>Consejos, experiencias y guías de viaje</p>
+        </div>
+        <div class="banner-overlay"></div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="blog-page">
+        <div class="container">
+            <div class="blog-intro">
+                <h2>Descubre el Mundo con Nosotros</h2>
+                <p class="blog-description">Encuentra consejos útiles, experiencias reales y guías completas para hacer de tu próximo viaje una aventura inolvidable.</p>
+            </div>
+
+            <!-- Categorías del blog -->
+            <div class="blog-categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="consejos">Consejos</button>
+                <button class="category-btn" data-category="destinos">Destinos</button>
+                <button class="category-btn" data-category="experiencias">Experiencias</button>
+                <button class="category-btn" data-category="guias">Guías</button>
+            </div>
+
+            <!-- Artículo destacado -->
+            <div class="featured-post">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=400&fit=crop" alt="Consejos para viajar en grupo">
+                    <div class="featured-badge">Destacado</div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">Consejos</span>
+                        <span class="post-date">15 de Enero, 2024</span>
+                    </div>
+                    <h2>10 Consejos Esenciales para tu Primer Viaje Grupal</h2>
+                    <p>Viajar en grupo puede ser una de las experiencias más enriquecedoras de tu vida. Descubre nuestros consejos probados para que tu aventura grupal sea perfecta desde el primer día.</p>
+                    <a href="#" class="read-more-btn">Leer Artículo Completo</a>
+                </div>
+            </div>
+
+            <!-- Grid de artículos -->
+            <div class="blog-grid">
+                <!-- Artículo 1 -->
+                <article class="blog-post-card" data-category="destinos">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="Cartagena destinos">
+                        <div class="post-category-badge">Destinos</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">12 de Enero, 2024</span>
+                            <span class="read-time">5 min lectura</span>
+                        </div>
+                        <h3>Cartagena: La Joya del Caribe Colombiano</h3>
+                        <p>Descubre los secretos mejor guardados de la ciudad amurallada, desde sus calles empedradas hasta sus playas paradisíacas.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article class="blog-post-card" data-category="consejos">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&h=250&fit=crop" alt="Equipaje de viaje">
+                        <div class="post-category-badge">Consejos</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">10 de Enero, 2024</span>
+                            <span class="read-time">3 min lectura</span>
+                        </div>
+                        <h3>Cómo Hacer la Maleta Perfecta</h3>
+                        <p>Tips profesionales para empacar eficientemente y no olvidar nada importante en tu próxima aventura.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article class="blog-post-card" data-category="experiencias">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop" alt="Eje cafetero experiencia">
+                        <div class="post-category-badge">Experiencias</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">8 de Enero, 2024</span>
+                            <span class="read-time">7 min lectura</span>
+                        </div>
+                        <h3>Mi Primera Vez en el Eje Cafetero</h3>
+                        <p>La experiencia real de una viajera que descubrió la magia de la cultura cafetera colombiana.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article class="blog-post-card" data-category="guias">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=250&fit=crop" alt="Guía de playas">
+                        <div class="post-category-badge">Guías</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">5 de Enero, 2024</span>
+                            <span class="read-time">6 min lectura</span>
+                        </div>
+                        <h3>Guía Completa de las Mejores Playas del Caribe</h3>
+                        <p>Todo lo que necesitas saber sobre San Antero, Coveñas y otros paraísos costeros.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 5 -->
+                <article class="blog-post-card" data-category="consejos">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=400&h=250&fit=crop" alt="Presupuesto de viaje">
+                        <div class="post-category-badge">Consejos</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">3 de Enero, 2024</span>
+                            <span class="read-time">4 min lectura</span>
+                        </div>
+                        <h3>Cómo Planificar tu Presupuesto de Viaje</h3>
+                        <p>Estrategias inteligentes para viajar más gastando menos, sin sacrificar la calidad de tu experiencia.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 6 -->
+                <article class="blog-post-card" data-category="experiencias">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=250&fit=crop" alt="Despedida de grado">
+                        <div class="post-category-badge">Experiencias</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">1 de Enero, 2024</span>
+                            <span class="read-time">5 min lectura</span>
+                        </div>
+                        <h3>La Despedida de Grado Más Memorable</h3>
+                        <p>Testimonios reales de estudiantes que vivieron una experiencia única en su celebración de graduación.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 7 -->
+                <article class="blog-post-card" data-category="destinos">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Santa Marta">
+                        <div class="post-category-badge">Destinos</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">28 de Diciembre, 2023</span>
+                            <span class="read-time">6 min lectura</span>
+                        </div>
+                        <h3>Santa Marta: Entre Mar y Montaña</h3>
+                        <p>Explora la diversidad única de Santa Marta, donde la Sierra Nevada se encuentra con el mar Caribe.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <!-- Artículo 8 -->
+                <article class="blog-post-card" data-category="guias">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop" alt="Actividades acuáticas">
+                        <div class="post-category-badge">Guías</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">25 de Diciembre, 2023</span>
+                            <span class="read-time">4 min lectura</span>
+                        </div>
+                        <h3>Deportes Acuáticos para Principiantes</h3>
+                        <p>Guía completa para iniciarte en deportes acuáticos durante tus vacaciones en la costa.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h2>¡No te pierdas nuestros últimos artículos!</h2>
+                    <p>Suscríbete a nuestro newsletter y recibe consejos de viaje, ofertas especiales y las mejores experiencias directamente en tu correo.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Llamada a la acción -->
+            <div class="blog-cta">
+                <h2>¿Listo para vivir tu propia aventura?</h2>
+                <p>Deja de leer sobre viajes y comienza a vivirlos</p>
+                <div class="cta-buttons">
+                    <a href="planes-destinos.html" class="cta-button primary">Ver Nuestros Planes</a>
+                    <a href="https://wa.me/573103776685?text=Hola, quiero planificar mi viaje después de leer el blog" class="cta-button secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Planificar mi Viaje
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency" class="footer-logo">
+                    <p>Más que un destino, una experiencia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="planes-destinos.html">Planes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>vivaloagency@gmail.com</p>
+                    <p>+57 310 377 6685</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vívalo Agency. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/573103776685?text=Hola, me interesaron los artículos del blog" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

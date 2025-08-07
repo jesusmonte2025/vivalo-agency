@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Vívalo Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency - Más que un destino, una experiencia" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="planes-destinos.html">Planes y Destinos</a></li>
+                    <li><a href="por-que-vivalo.html">¿Por qué Vívalo?</a></li>
+                    <li><a href="reservas.html" class="active">Reservas</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Reservas</h1>
+            <p>Solicita tu cotización y reserva tu próxima aventura</p>
+        </div>
+        <div class="banner-overlay"></div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="reservations-page">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-form-section">
+                    <h2>Solicita tu Cotización</h2>
+                    <p class="form-intro">Completa el formulario y nos pondremos en contacto contigo para crear la experiencia perfecta.</p>
+                    
+                    <form id="reservationForm" class="reservation-form-detailed">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="ciudad">Ciudad *</label>
+                                <input type="text" id="ciudad" name="ciudad" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha">Fecha del Viaje *</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="personas">Número de Personas *</label>
+                                <input type="number" id="personas" name="personas" min="1" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destino">Destino *</label>
+                            <select id="destino" name="destino" required>
+                                <option value="">Selecciona un destino</option>
+                                <optgroup label="Planes Grado 11">
+                                    <option value="despedida-dorada">Despedida Dorada</option>
+                                    <option value="fiesta-blanca">Fiesta Blanca</option>
+                                    <option value="viaje-sonado">Viaje Soñado</option>
+                                </optgroup>
+                                <optgroup label="Escapadas">
+                                    <option value="san-antero">San Antero</option>
+                                    <option value="covenas">Coveñas</option>
+                                    <option value="cartagena">Cartagena</option>
+                                </optgroup>
+                                <optgroup label="Experiencias Naturales">
+                                    <option value="eje-cafetero">Eje Cafetero</option>
+                                    <option value="santa-marta">Santa Marta</option>
+                                    <option value="antioquia-rural">Antioquia Rural</option>
+                                </optgroup>
+                                <option value="personalizado">Plan Personalizado</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presupuesto">Presupuesto Aproximado *</label>
+                            <select id="presupuesto" name="presupuesto" required>
+                                <option value="">Selecciona tu presupuesto</option>
+                                <option value="100-300">$100.000 - $300.000</option>
+                                <option value="300-500">$300.000 - $500.000</option>
+                                <option value="500-800">$500.000 - $800.000</option>
+                                <option value="800-1200">$800.000 - $1.200.000</option>
+                                <option value="1200+">Más de $1.200.000</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios Adicionales</label>
+                            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos sobre preferencias especiales, necesidades del grupo, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn-detailed">
+                            <i class="fab fa-whatsapp"></i> Enviar Solicitud por WhatsApp
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="payment-info-section">
+                    <h2>🗓 Información de Pagos</h2>
+                    
+                    <div class="payment-steps">
+                        <div class="payment-step-detailed">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Apartado Inicial</h3>
+                                <p class="step-price">$30.000</p>
+                                <p>Reserva tu cupo con un apartado mínimo de $30.000</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step-detailed">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Cuotas Mensuales</h3>
+                                <p class="step-price">$50.000</p>
+                                <p>Paga $50.000 los días 15 y 30 de cada mes hasta completar el valor total</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-step-detailed">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>¡A Viajar!</h3>
+                                <p class="step-price">🎉</p>
+                                <p>Una vez completado el pago, ¡estás listo para vivir tu aventura!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods-detailed">
+                        <h3>Métodos de Pago Disponibles</h3>
+                        <div class="payment-grid">
+                            <div class="payment-method">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Wompi</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>MercadoPago</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-university"></i>
+                                <span>PayU</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-wallet"></i>
+                                <span>Nequi</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-building"></i>
+                                <span>PSE</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span>Efectivo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-section">
+                        <h3>Beneficios de Reservar</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Sin intereses en cuotas</li>
+                            <li><i class="fas fa-check"></i> Flexibilidad en fechas de pago</li>
+                            <li><i class="fas fa-check"></i> Asesoría personalizada</li>
+                            <li><i class="fas fa-check"></i> Seguro de viaje incluido</li>
+                            <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                            <li><i class="fas fa-check"></i> Garantía de satisfacción</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-quick">
+                <h2>¿Necesitas ayuda inmediata?</h2>
+                <p>Nuestro equipo está disponible para resolver todas tus dudas</p>
+                <div class="contact-options">
+                    <a href="https://wa.me/573103776685?text=Hola, necesito ayuda con una reserva" class="contact-option whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <span>+57 310 377 6685</span>
+                        </div>
+                    </a>
+                    <a href="mailto:vivaloagency@gmail.com" class="contact-option email">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <span>vivaloagency@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+573103776685" class="contact-option phone">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <span>+57 310 377 6685</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency" class="footer-logo">
+                    <p>Más que un destino, una experiencia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="planes-destinos.html">Planes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>vivaloagency@gmail.com</p>
+                    <p>+57 310 377 6685</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vívalo Agency. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/573103776685?text=Hola, quiero hacer una reserva" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

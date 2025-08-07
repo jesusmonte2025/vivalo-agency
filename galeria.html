@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Vívalo Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency - Más que un destino, una experiencia" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="planes-destinos.html">Planes y Destinos</a></li>
+                    <li><a href="por-que-vivalo.html">¿Por qué Vívalo?</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="galeria.html" class="active">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Galería</h1>
+            <p>Momentos inolvidables de nuestros viajeros</p>
+        </div>
+        <div class="banner-overlay"></div>
+    </section>
+
+    <!-- Contenido principal -->
+    <section class="gallery-page">
+        <div class="container">
+            <div class="gallery-intro">
+                <h2>Revive las Experiencias</h2>
+                <p class="gallery-description">Cada imagen cuenta una historia, cada sonrisa refleja una aventura vivida. Descubre los momentos más especiales que nuestros viajeros han compartido con nosotros.</p>
+            </div>
+
+            <!-- Filtros de galería -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="grado11">Grado 11</button>
+                <button class="filter-btn" data-filter="escapadas">Escapadas</button>
+                <button class="filter-btn" data-filter="naturaleza">Naturaleza</button>
+                <button class="filter-btn" data-filter="grupos">Grupos</button>
+            </div>
+
+            <!-- Galería principal -->
+            <div class="gallery-grid-main">
+                <!-- Imágenes de Grado 11 -->
+                <div class="gallery-item-main" data-category="grado11">
+                    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&h=400&fit=crop" alt="Despedida de Grado - Grupo celebrando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Despedida Dorada 2024</h3>
+                            <p>Momentos únicos en la celebración de grado</p>
+                            <span class="gallery-category">Grado 11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="grado11">
+                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&h=400&fit=crop" alt="Fiesta Blanca - Estudiantes bailando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fiesta Blanca</h3>
+                            <p>Elegancia y diversión en una noche mágica</p>
+                            <span class="gallery-category">Grado 11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imágenes de Escapadas -->
+                <div class="gallery-item-main" data-category="escapadas">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=400&fit=crop" alt="San Antero - Playa paradisíaca">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>San Antero</h3>
+                            <p>Aguas cristalinas y arena blanca</p>
+                            <span class="gallery-category">Escapadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="escapadas">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=400&fit=crop" alt="Cartagena - Ciudad amurallada">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cartagena Histórica</h3>
+                            <p>Historia y cultura en cada rincón</p>
+                            <span class="gallery-category">Escapadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="escapadas">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=400&fit=crop" alt="Coveñas - Actividades acuáticas">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Coveñas Aventura</h3>
+                            <p>Deportes acuáticos y diversión</p>
+                            <span class="gallery-category">Escapadas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imágenes de Naturaleza -->
+                <div class="gallery-item-main" data-category="naturaleza">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=400&fit=crop" alt="Eje Cafetero - Paisajes verdes">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Eje Cafetero</h3>
+                            <p>Paisajes verdes y cultura cafetera</p>
+                            <span class="gallery-category">Naturaleza</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="naturaleza">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop" alt="Santa Marta - Sierra Nevada">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Santa Marta Natural</h3>
+                            <p>Entre mar y montaña</p>
+                            <span class="gallery-category">Naturaleza</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imágenes de Grupos -->
+                <div class="gallery-item-main" data-category="grupos">
+                    <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=500&h=400&fit=crop" alt="Grupo de amigos viajando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Aventura Grupal</h3>
+                            <p>Amistades que perduran</p>
+                            <span class="gallery-category">Grupos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="grupos">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=400&fit=crop" alt="Familia disfrutando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Viaje Familiar</h3>
+                            <p>Momentos en familia</p>
+                            <span class="gallery-category">Grupos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="grado11">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=400&fit=crop" alt="Graduados celebrando">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Celebración de Logros</h3>
+                            <p>El final de una etapa, el inicio de otra</p>
+                            <span class="gallery-category">Grado 11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="naturaleza">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=500&h=400&fit=crop" alt="Paisaje montañoso">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Montañas Colombianas</h3>
+                            <p>La majestuosidad de nuestros paisajes</p>
+                            <span class="gallery-category">Naturaleza</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item-main" data-category="escapadas">
+                    <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&h=400&fit=crop" alt="Atardecer en la playa">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Atardeceres Mágicos</h3>
+                            <p>Momentos que quedan en el corazón</p>
+                            <span class="gallery-category">Escapadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de videos -->
+            <div class="video-section">
+                <h2>Videos de Nuestras Aventuras</h2>
+                <p class="video-description">Revive los momentos más emocionantes a través de nuestros videos</p>
+                
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=250&fit=crop" alt="Video Despedida Dorada">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Despedida Dorada 2024</h3>
+                            <p>Los mejores momentos de nuestra despedida más especial</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=250&fit=crop" alt="Video San Antero">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>San Antero Aventura</h3>
+                            <p>Deportes acuáticos y diversión en las mejores playas</p>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=250&fit=crop" alt="Video Eje Cafetero">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Eje Cafetero Mágico</h3>
+                            <p>Descubre la cultura cafetera y paisajes únicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Llamada a la acción -->
+            <div class="gallery-cta">
+                <h2>¿Quieres ser parte de nuestra próxima galería?</h2>
+                <p>Únete a nosotros y crea recuerdos que durarán para siempre</p>
+                <div class="cta-buttons">
+                    <a href="planes-destinos.html" class="cta-button primary">Ver Nuestros Planes</a>
+                    <a href="https://wa.me/573103776685?text=Hola, quiero información sobre sus viajes" class="cta-button secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Contactar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo-vivalo.png" alt="Vívalo Agency" class="footer-logo">
+                    <p>Más que un destino, una experiencia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="planes-destinos.html">Planes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>vivaloagency@gmail.com</p>
+                    <p>+57 310 377 6685</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vívalo Agency. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/573103776685?text=Hola, me encantaron las fotos de la galería" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
